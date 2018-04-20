@@ -193,6 +193,11 @@ a:visited, a:active, a:hover, a:focus {
     background-color: #f7f7fa;
 }
 
+.o-row--gradient {
+    background: linear-gradient(to top right, #5051DB, #3887f7);
+    color: #fff
+}
+
 /* size modifiers */
 
 .o-row--lg {
@@ -576,12 +581,46 @@ a:visited, a:active, a:hover, a:focus {
     transition-timing-function: ease-in;
 }
 
-. .c-link-cta:hover {
+.c-link-cta:hover {
     color: #3E3EA8;
 }
 
 .c-link-cta:hover::after {
     transform: scaleX(1);
+    background-color: #3E3EA8;
+}
+
+.c-link-cta--inverse, .c-link-cta--inverse:visited, .c-link-cta--inverse:active, .c-link-cta--inverse:hover {
+    color: #FFF;
+}
+
+.c-link-cta--inverse::after, .c-link-cta--inverse:hover::after {
+    background-color: #fff
+}
+
+/*
+    Component: footer
+    ---
+    Main footer of the website
+*/
+
+.c-footer {}
+
+.c-footer__logo {}
+
+.c-footer__nav {}
+
+@media (min-width: 768px) {
+    .c-footer {}
+    .c-footer__logo {}
+    .c-footer__nav {}
+}
+
+@media (min-width: 992px) {
+    .c-footer {}
+    .c-footer__logo {}
+    .c-footer__logo .c-logo {}
+    .c-footer__nav {}
 }
 
 /*------------------------------------*\
